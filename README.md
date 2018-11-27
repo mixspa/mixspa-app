@@ -3,11 +3,11 @@ mixspa-app provide a method to create spa and then we can mix all app in one app
 
 ## Current Status:
 
-[![NPM Version](https://img.shields.io/npm/v/@mixspa/mixspa-app.svg)](https://npmjs.org/package/@mixspa/mixspa-app)
-[![NPM Downloads](https://img.shields.io/npm/dm/@mixspa/mixspa-app.svg)](https://npmjs.org/package/@mixspa/mixspa-app)
-[![Build Status](https://circleci.com/gh/mixspa/mixspa-app.svg?style=svg)](https://circleci.com/gh/mixspa/mixspa-app)
+[![NPM Version](https://img.shields.io/npm/v/@mixspa/app.svg)](https://npmjs.org/package/@mixspa/app)
+[![NPM Downloads](https://img.shields.io/npm/dm/@mixspa/app.svg)](https://npmjs.org/package/@mixspa/app)
+[![Build Status](https://circleci.com/gh/mixspa/app.svg?style=svg)](https://circleci.com/gh/mixspa/app)
 
-[![NPM](https://nodei.co/npm/@mixspa/mixspa-app.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@mixspa/mixspa-app/)
+[![NPM](https://nodei.co/npm/@mixspa/app.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@mixspa/app/)
 
 ## Features:
 
@@ -22,7 +22,7 @@ mixspa-app provide a method to create spa and then we can mix all app in one app
 
 ### Setup
 
-Clone this stencil and replace `@mixspa/mixspa-app` with your package name.
+Clone this stencil and replace `@mixspa/app` with your package name.
 
 ```
 $ git clone git@github.com:mixspa/mixspa-app.git
