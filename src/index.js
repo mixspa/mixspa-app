@@ -1,1 +1,1 @@
-export default from './defineApp';
+export default from './MixspaApp';

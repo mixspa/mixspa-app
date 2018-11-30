@@ -1,11 +1,11 @@
-import defineApp from './defineApp';
+import MixspaApp from './MixspaApp';
 
-describe('defineApp', () => {
+describe('MixspaApp', () => {
   let elementClass;
   let initCallBack = jest.fn();
 
   beforeEach(() => {
-    defineApp({
+    MixspaApp.define({
       name: 'app-name',
       appInit: initCallBack
     });
