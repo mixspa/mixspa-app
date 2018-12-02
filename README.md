@@ -1,84 +1,41 @@
 # mixspa-app
-mixspa-app provide a method to create spa and then we can mix all app in one app.
+mixspa-app is used to define a app that can be load in another spa.
 
 ## Current Status:
 
 [![NPM Version](https://img.shields.io/npm/v/@mixspa/app.svg)](https://npmjs.org/package/@mixspa/app)
 [![NPM Downloads](https://img.shields.io/npm/dm/@mixspa/app.svg)](https://npmjs.org/package/@mixspa/app)
-[![Build Status](https://circleci.com/gh/mixspa/app.svg?style=svg)](https://circleci.com/gh/mixspa/app)
+[![Build Status](https://circleci.com/gh/mixspa/mixspa-app.svg?style=svg)](https://circleci.com/gh/mixspa/mixspa-app)
 
 [![NPM](https://nodei.co/npm/@mixspa/app.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@mixspa/app/)
 
-## Features:
+## How to use?
 
-* Support Publish your package to git & npm with ci.
-* Support CircleCi for pipeline.
-* Support ES7 & ES6 syntax.
-* Support ESlint to check the code.
-* Support Jest to test your code.
-* Support Yarn audit to do security check for dependencies.
+According the following to define a app. The `name` & `render` must exist.
 
-## Development:
+```js
+import MixspaApp from '@mixspa/app';
 
-### Setup
-
-Clone this stencil and replace `@mixspa/app` with your package name.
-
-```
-$ git clone git@github.com:mixspa/mixspa-app.git
-```
-
-### Install dependencies
-
-```
-$ yarn install
-```
-
-### Compile code
-
-```
-$ yarn babel
-# or run babel in watch mode
-$ yarn babel:watch
+MixspaApp.define({
+  name: 'app-demo',
+  init: function(element) {
+    /* will be call when custom element has been created */
+  },
+  render: function(element) {
+    /* will be call after custom element has been rendered */
+  },
+  unmount: function(element) {
+    /* will be call when custom element has been removed */
+  },
+  update: function(element) {
+    /* will be call when attribute has been changed */
+  }
+});
 ```
 
-### Generate distribution code
-
-```
-$ yarn build
-```
-
-### Linting
-
-```
-$ yarn lint
-```
-
-### Testing
-
-```
-$ yarn test
-# or run the test in watch mode
-$ yarn test:watch
-```
-
-### Security check
-
-```
-$ yarn audit
-```
-
-### Setup CI
-
-* Update the circleci config
-* Setup the ci into circleci site.
-
-
-### Publish your package
-
-```
-$ yarn release
-```
+The MixspaApp will create a custom element for use.
+About more details & the api of parameter `element` please reference here:
+[CustomElement](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry)
 
 ## License
 
