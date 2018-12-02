@@ -3,26 +3,19 @@ class MixspaApp {
     window.customElements.define(options.name, class extends HTMLElement {
       constructor() {
         super();
-        options.init && options.init();
+        options.init && options.init(this);
       }
 
       connectedCallback() {
-        options.render && options.render(this.getAttributes());
+        options.render && options.render(this);
       }
 
       disconnectedCallback() {
-        options.unmount && options.unmount();
+        options.unmount && options.unmount(this);
       }
 
       attributeChangedCallback() {
-        options.update && options.update(this.getAttributes());
-      }
-
-      getAttributes() {
-        return this.getAttributeNames().reduce((nextName, currentObj) => {
-          currentObj[nextName] = this.getAttribute(nextName);
-          return currentObj;
-        }, {});
+        options.update && options.update(this);
       }
     });
   }
