@@ -1,6 +1,6 @@
 {
   "name": "@mixspa/app",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "This is a library for create multi-spa in one app",
   "main": "lib/index.js",
   "engines": {
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xqstencils/mixspa-app.git"
+    "url": "git+https://github.com/mixspa/mixspa-app.git"
   },
   "keywords": [
     "lib",
@@ -54,7 +54,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xqstencils/mixspa-app/issues"
+    "url": "https://github.com/mixspa/mixspa-app/issues"
   },
-  "homepage": "https://github.com/xqstencils/mixspa-app#readme"
+  "homepage": "https://github.com/mixspa/mixspa-app#readme"
 }
