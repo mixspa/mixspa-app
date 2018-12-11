@@ -1,6 +1,6 @@
 {
   "name": "@mixspa/app",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "This is a library for create multi-spa in one app",
   "main": "lib/index.js",
   "engines": {
