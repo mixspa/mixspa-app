@@ -6,7 +6,7 @@ describe('MixspaApp', () => {
 
   beforeEach(() => {
     MixspaApp.define({
-      name: 'app-name',
+      tag: 'app-name',
       appInit: initCallBack
     });
     elementClass = window.customElements.get('app-name');

@@ -1,6 +1,6 @@
 class MixspaApp {
   static define(options) {
-    window.customElements.define(options.name, class extends HTMLElement {
+    window.customElements.define(options.tag, class extends HTMLElement {
       constructor() {
         super();
         options.init && options.init(this);
