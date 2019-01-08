@@ -17,11 +17,12 @@ According the following to define a app. The `name` & `render` must exist.
 import MixspaApp from '@mixspa/app';
 
 MixspaApp.define({
-  name: 'app-demo', /* This name will be used for tag name */
+  tag: 'app-demo', /* This name will be used for tag name */
   init: function(element) {
     /* will be call when custom element has been created */
   },
   render: function(element) {
+    let attrName = element.getAttribute('data-name'); //
     /* will be call after custom element has been rendered */
   },
   unmount: function(element) {
